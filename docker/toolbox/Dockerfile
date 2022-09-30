@@ -1,4 +1,4 @@
-FROM apline
+FROM alpine
 RUN apk add --no-cache curl wget busybox-etras netcat-openbsd python py-pip
 RUN pip install awcli
 RUN apk --purge -v del py-pip
